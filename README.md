@@ -5,7 +5,8 @@ Jose Alejandro Roman <br/>
 
 
 ## 1. Explicación de la problemática
-hola
+Se tiene una biblioteca donde constantemente se prestan libros, estos poseen un estado que puede ser bueno o malo, cuando son prestados se encuentran en buen estado, sin embargo se puede dar el caso de que un usuario devuelva un libro en mal estado, por lo que se vuelve necesario avisar a las diferentes dependencias de la biblioteca que se encargan de resolver esta situación(stock,administración, compras).
+Es por esto que se recurre al patrón de diseño Observer, puesto que el sistema de la biblioteca debe reaccionar al cambio de estado de los libros para que cuando se reciba un libro(sujeto observado) y este malo(cambio de estado)se avise(notificación-alerta) a cada una de las dependencias(observadores). Notese que son varias las dependencias que reaccionan al cambio de estado de una misma clase, por lo que se vuelve conveniente aplicar este patrón.
 
 
 
